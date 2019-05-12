@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.zhy.pattern.factoryPattern.factoryMethod.ICourseFactory</OriginalElement>
+  <nodes>
+    <node x="0.0" y="112.0">com.zhy.pattern.factoryPattern.factoryMethod.JavaCourseFactory</node>
+    <node x="0.0" y="331.0">com.zhy.pattern.factoryPattern.simpleFactory.JavaCourse</node>
+    <node x="109.75" y="0.0">com.zhy.pattern.factoryPattern.factoryMethod.ICourseFactory</node>
+    <node x="93.5" y="219.0">com.zhy.pattern.factoryPattern.simpleFactory.ICourse</node>
+    <node x="187.0" y="331.0">com.zhy.pattern.factoryPattern.simpleFactory.PythonCourse</node>
+    <node x="204.0" y="112.0">com.zhy.pattern.factoryPattern.factoryMethod.PythonCourseFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.zhy.pattern.factoryPattern.simpleFactory.PythonCourse" target="com.zhy.pattern.factoryPattern.simpleFactory.ICourse">
+      <point x="0.0" y="-31.0" />
+      <point x="270.5" y="306.0" />
+      <point x="218.75" y="306.0" />
+      <point x="41.75" y="31.0" />
+    </edge>
+    <edge source="com.zhy.pattern.factoryPattern.simpleFactory.JavaCourse" target="com.zhy.pattern.factoryPattern.simpleFactory.ICourse">
+      <point x="0.0" y="-31.0" />
+      <point x="83.5" y="306.0" />
+      <point x="135.25" y="306.0" />
+      <point x="-41.75" y="31.0" />
+    </edge>
+    <edge source="com.zhy.pattern.factoryPattern.factoryMethod.PythonCourseFactory" target="com.zhy.pattern.factoryPattern.factoryMethod.ICourseFactory">
+      <point x="0.0" y="-31.0" />
+      <point x="305.5" y="87.0" />
+      <point x="243.25" y="87.0" />
+      <point x="44.5" y="31.0" />
+    </edge>
+    <edge source="com.zhy.pattern.factoryPattern.factoryMethod.JavaCourseFactory" target="com.zhy.pattern.factoryPattern.factoryMethod.ICourseFactory">
+      <point x="0.0" y="-31.0" />
+      <point x="92.0" y="87.0" />
+      <point x="154.25" y="87.0" />
+      <point x="-44.5" y="31.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="79.5" y="165.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
