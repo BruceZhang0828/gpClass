@@ -11,3 +11,8 @@
        4.编译生成新的java代码.class。
        5.在重新加载到JVM中运行。
 
+    Cglib Proxy动态生成实现:
+        1.实现CGLib相关接口:MethodInterceptor;
+        2.在intercept方法中,进行增强操作
+        3.CGLib代理不需要进实现接口,通过动态继承目标实现的动态代理.
+
