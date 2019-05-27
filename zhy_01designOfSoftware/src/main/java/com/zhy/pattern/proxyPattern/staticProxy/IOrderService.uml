@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.zhy.pattern.proxyPattern.staticProxy.IOrderService</OriginalElement>
+  <nodes>
+    <node x="527.875" y="656.0">com.zhy.pattern.proxyPattern.staticProxy.IOrderServiceImpl</node>
+    <node x="296.5" y="413.0">com.zhy.pattern.proxyPattern.staticProxy.IOrderService</node>
+    <node x="75.1875" y="617.0">com.zhy.pattern.proxyPattern.staticProxy.OrderServiceStaticProxy</node>
+    <node x="10.5" y="321.0">com.zhy.pattern.proxyPattern.staticProxy.DynamicDataSourceEntry</node>
+    <node x="548.875" y="413.0">com.zhy.pattern.proxyPattern.staticProxy.OrderDao</node>
+    <node x="513.375" y="861.0">com.zhy.pattern.proxyPattern.staticProxy.DynamicDataSourceEntryTest</node>
+    <node x="558.1625" y="0.0">com.zhy.pattern.proxyPattern.staticProxy.Order</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.DynamicDataSourceEntryTest" target="com.zhy.pattern.proxyPattern.staticProxy.IOrderService">
+      <point x="-51.80000000000001" y="-31.0" />
+      <point x="591.075" y="831.0" />
+      <point x="467.1625" y="831.0" />
+      <point x="467.1625" y="597.0" />
+      <point x="457.5" y="597.0" />
+      <point x="46.0" y="31.0" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.DynamicDataSourceEntryTest" target="com.zhy.pattern.proxyPattern.staticProxy.OrderServiceStaticProxy">
+      <point x="-103.60000000000002" y="-31.0" />
+      <point x="539.275" y="841.0" />
+      <point x="246.6875" y="841.0" />
+      <point x="0.0" y="97.0" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.OrderServiceStaticProxy" target="com.zhy.pattern.proxyPattern.staticProxy.DynamicDataSourceEntry">
+      <point x="-68.6" y="-97.0" />
+      <point x="178.08749999999998" y="597.0" />
+      <point x="143.5" y="597.0" />
+      <point x="0.0" y="123.0" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.OrderServiceStaticProxy" target="com.zhy.pattern.proxyPattern.staticProxy.IOrderService">
+      <point x="0.0" y="-97.0" />
+      <point x="246.6875" y="587.0" />
+      <point x="319.5" y="587.0" />
+      <point x="-92.0" y="31.0" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.IOrderServiceImpl" target="com.zhy.pattern.proxyPattern.staticProxy.OrderDao">
+      <point x="-28.75" y="-58.0" />
+      <point x="614.125" y="597.0" />
+      <point x="595.875" y="597.0" />
+      <point x="-47.0" y="31.0" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.OrderServiceStaticProxy" target="com.zhy.pattern.proxyPattern.staticProxy.Order">
+      <point x="-137.2" y="-97.0" />
+      <point x="109.48750000000001" y="597.0" />
+      <point x="0.0" y="597.0" />
+      <point x="0.0" y="291.0" />
+      <point x="578.5791666666667" y="291.0" />
+      <point x="-102.08333333333337" y="135.5" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.OrderDao" target="com.zhy.pattern.proxyPattern.staticProxy.Order">
+      <point x="0.0" y="-31.0" />
+      <point x="642.875" y="301.0" />
+      <point x="660.2458333333334" y="301.0" />
+      <point x="-20.416666666666686" y="135.5" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.IOrderServiceImpl" target="com.zhy.pattern.proxyPattern.staticProxy.Order">
+      <point x="86.25" y="-58.0" />
+      <point x="729.125" y="597.0" />
+      <point x="761.5" y="597.0" />
+      <point x="761.5" y="301.0" />
+      <point x="701.0791666666667" y="301.0" />
+      <point x="20.41666666666663" y="135.5" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.DynamicDataSourceEntryTest" target="com.zhy.pattern.proxyPattern.staticProxy.Order">
+      <point x="51.80000000000001" y="-31.0" />
+      <point x="694.675" y="831.0" />
+      <point x="772.5" y="831.0" />
+      <point x="772.5" y="291.0" />
+      <point x="741.9125" y="291.0" />
+      <point x="61.25" y="135.5" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.DynamicDataSourceEntryTest" target="com.zhy.pattern.proxyPattern.staticProxy.IOrderServiceImpl">
+      <point x="0.0" y="-31.0" />
+      <point x="0.0" y="58.0" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.IOrderService" target="com.zhy.pattern.proxyPattern.staticProxy.Order">
+      <point x="0.0" y="-31.0" />
+      <point x="411.5" y="301.0" />
+      <point x="619.4125" y="301.0" />
+      <point x="-61.25" y="135.5" />
+    </edge>
+    <edge source="com.zhy.pattern.proxyPattern.staticProxy.IOrderServiceImpl" target="com.zhy.pattern.proxyPattern.staticProxy.IOrderService">
+      <point x="-86.25" y="-58.0" />
+      <point x="556.625" y="597.0" />
+      <point x="503.5" y="597.0" />
+      <point x="92.0" y="31.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="532.5" y="641.5" />
+  <SelectedNodes>
+    <node>com.zhy.pattern.proxyPattern.staticProxy.IOrderService</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
