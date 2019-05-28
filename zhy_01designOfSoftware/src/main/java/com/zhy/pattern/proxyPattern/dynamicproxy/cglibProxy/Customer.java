@@ -12,4 +12,8 @@ public class Customer {
 
         System.out.println("肤白貌美大象腿");
     }
+
+    public void getAJob(){
+        System.out.println("获取一个工作");
+    }
 }

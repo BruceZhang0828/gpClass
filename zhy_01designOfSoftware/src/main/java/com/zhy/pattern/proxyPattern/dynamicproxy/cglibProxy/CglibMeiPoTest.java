@@ -18,6 +18,7 @@ public class CglibMeiPoTest {
             Customer customer = (Customer)new CglibMeipo().getInstance(Customer.class);
 
             customer.findLove();
+            //customer.getAJob();
         }catch (Exception e) {
             e.printStackTrace();
         }

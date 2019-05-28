@@ -2,6 +2,7 @@ package com.zhy.pattern.proxyPattern.dynamicproxy.jdkproxy;
 
 import com.zhy.pattern.proxyPattern.staticProxy.Person;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -31,6 +32,8 @@ public class Meipo implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         //动态生成Java代码，把新业务逻辑方法由一定的逻辑代码去调用（在代码中体现）。
         before();
+        Annotation[] annotations = method.getAnnotations();
+        System.out.println(annotations);
         Object obj = method.invoke(this.target, args);
         after();
         return obj;
