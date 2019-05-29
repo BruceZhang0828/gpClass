@@ -27,7 +27,7 @@ public class DispatcherServlet extends HttpServlet {
     private List<Handler> handlerMapping = new ArrayList<>();
 
     @Override
-    public void init(){
+    public void init() {
         Class<MemberController> memberControllerClass = MemberController.class;
         try {
             handlerMapping.add(new Handler().setController(memberControllerClass.newInstance())
@@ -39,9 +39,11 @@ public class DispatcherServlet extends HttpServlet {
     }
 
     private void doDispatch(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+
         //1.获取用户请求的url
         //如果按照javaEE标准 每个url对应一个Serlvet,url由浏览器输入
         String uri = req.getRequestURI();
+
         //2.Servlet拿到url以后,要做权衡(要做判断,要做选择)
         //根据用户请求的URl,去找这个url对应的某个java类的方法
 
@@ -50,16 +52,17 @@ public class DispatcherServlet extends HttpServlet {
 
         //通过拿到url去handlerMapping
         Handler handler = null;
-        for (Handler h:handlerMapping){
+        for (Handler h : handlerMapping) {
             if (uri.equals(h.getUrl())) {
                 handler = h;
                 break;
             }
         }
+
         //4.将具体的任务分发给Method(通过反射调用其对应的方法)
         Object o = null;
         try {
-             o = handler.getMethod().invoke(handler.getController(),req.getParameter("id"));
+            o = handler.getMethod().invoke(handler.getController(), req.getParameter("id"));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -74,7 +77,7 @@ public class DispatcherServlet extends HttpServlet {
         }
     }
 
-    class Handler{
+    class Handler {
         private Object controller;
         private String url;
         private Method method;
@@ -106,6 +109,5 @@ public class DispatcherServlet extends HttpServlet {
             return this;
         }
     }
-
 
 }
