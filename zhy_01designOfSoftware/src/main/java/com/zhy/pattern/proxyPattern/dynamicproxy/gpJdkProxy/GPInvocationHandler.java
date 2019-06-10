@@ -10,5 +10,5 @@ import java.lang.reflect.Method;
  * @return
 **/
 public interface GPInvocationHandler {
-    public Object invoke(Object proxy, Method method,Object[] args) throws Throwable;
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable;
 }
