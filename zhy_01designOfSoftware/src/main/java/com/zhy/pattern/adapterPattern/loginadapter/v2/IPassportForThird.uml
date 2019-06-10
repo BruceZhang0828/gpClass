@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.zhy.pattern.adapterPattern.loginadapter.v2.IPassportForThird</OriginalElement>
+  <nodes>
+    <node x="0.0" y="242.0">com.zhy.pattern.adapterPattern.loginadapter.v2.PassportForThirdAdapter</node>
+    <node x="933.0" y="643.0">com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForTokenAdapter</node>
+    <node x="0.0" y="643.0">com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForQQAdapter</node>
+    <node x="622.0" y="505.0">com.zhy.pattern.adapterPattern.loginadapter.v2.LoginAdapter</node>
+    <node x="1244.0" y="643.0">com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForWechatAdapter</node>
+    <node x="311.0" y="643.0">com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForSinaAdapter</node>
+    <node x="622.0" y="643.0">com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForTelAdapter</node>
+    <node x="81.5" y="0.0">com.zhy.pattern.adapterPattern.loginadapter.v2.IPassportForThird</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.zhy.pattern.adapterPattern.loginadapter.v2.PassportForThirdAdapter" target="com.zhy.pattern.adapterPattern.loginadapter.v2.IPassportForThird">
+      <point x="0.0" y="-109.0" />
+      <point x="0.0" y="96.0" />
+    </edge>
+    <edge source="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForWechatAdapter" target="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginAdapter">
+      <point x="0.0" y="-44.0" />
+      <point x="1389.5" y="613.0" />
+      <point x="883.9" y="613.0" />
+      <point x="116.39999999999998" y="44.0" />
+    </edge>
+    <edge source="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForQQAdapter" target="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginAdapter">
+      <point x="0.0" y="-44.0" />
+      <point x="145.5" y="613.0" />
+      <point x="651.1" y="613.0" />
+      <point x="-116.39999999999998" y="44.0" />
+    </edge>
+    <edge source="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForSinaAdapter" target="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginAdapter">
+      <point x="0.0" y="-44.0" />
+      <point x="456.5" y="623.0" />
+      <point x="709.3" y="623.0" />
+      <point x="-58.200000000000045" y="44.0" />
+    </edge>
+    <edge source="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForTelAdapter" target="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginAdapter">
+      <point x="0.0" y="-44.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginForTokenAdapter" target="com.zhy.pattern.adapterPattern.loginadapter.v2.LoginAdapter">
+      <point x="0.0" y="-44.0" />
+      <point x="1078.5" y="623.0" />
+      <point x="825.6999999999999" y="623.0" />
+      <point x="58.19999999999993" y="44.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="513.0" y="542.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
