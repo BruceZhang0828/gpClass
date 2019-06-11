@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.zhy.pattern.decoratorPattern.battercake.v2.Basebattercake</OriginalElement>
+  <nodes>
+    <node x="279.0" y="467.0">com.zhy.pattern.decoratorPattern.battercake.v2.SausageDecorator</node>
+    <node x="183.5" y="138.0">com.zhy.pattern.decoratorPattern.battercake.v2.Basebattercake</node>
+    <node x="0.0" y="653.0">com.zhy.pattern.decoratorPattern.battercake.v2.BattercakeTest</node>
+    <node x="0.0" y="467.0">com.zhy.pattern.decoratorPattern.battercake.v2.EggDecorator</node>
+    <node x="183.5" y="0.0">com.zhy.pattern.decoratorPattern.battercake.v2.Battercake</node>
+    <node x="124.5" y="276.0">com.zhy.pattern.decoratorPattern.battercake.v2.BattercakeDecorator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.zhy.pattern.decoratorPattern.battercake.v2.SausageDecorator" target="com.zhy.pattern.decoratorPattern.battercake.v2.BattercakeDecorator">
+      <point x="0.0" y="-70.5" />
+      <point x="423.5" y="442.0" />
+      <point x="352.5" y="442.0" />
+      <point x="76.0" y="70.5" />
+    </edge>
+    <edge source="com.zhy.pattern.decoratorPattern.battercake.v2.BattercakeDecorator" target="com.zhy.pattern.decoratorPattern.battercake.v2.Basebattercake">
+      <point x="0.0" y="-70.5" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="com.zhy.pattern.decoratorPattern.battercake.v2.EggDecorator" target="com.zhy.pattern.decoratorPattern.battercake.v2.BattercakeDecorator">
+      <point x="0.0" y="-70.5" />
+      <point x="129.5" y="442.0" />
+      <point x="200.5" y="442.0" />
+      <point x="-76.0" y="70.5" />
+    </edge>
+    <edge source="com.zhy.pattern.decoratorPattern.battercake.v2.Basebattercake" target="com.zhy.pattern.decoratorPattern.battercake.v2.Battercake">
+      <point x="0.0" y="-44.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="179.0" y="187.5" />
+  <SelectedNodes>
+    <node>com.zhy.pattern.decoratorPattern.battercake.v2.Basebattercake</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
